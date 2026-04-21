@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>2048 JS</title>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <script type="module">
+        import UI2048 from './UI/interfaz.js';
+
+        const interfaz = new UI2048('game-container');
+        interfaz.inicializarDibujo();
+
+        // Ejemplo: Una matriz de prueba
+        const tableroPrueba = [
+            [2, 0, 0, 2],
+            [0, 4, 0, 0],
+            [0, 0, 2, 0],
+            [2, 2, 4, 8]
+        ];
+
+        interfaz.actualizarTablero(tableroPrueba);
+        
+        interfaz.configurarControles((direccion) => {
+            console.log("El usuario quiere mover hacia:", direccion);
+            // Aquí conectarías con la lógica de movimiento
+        });
+    </script>
+</body>
+</html>
