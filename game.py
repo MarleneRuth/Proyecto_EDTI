@@ -1,6 +1,6 @@
 import random
 import os
-#TEST ONLY
+#TEST ONLY"
 def iniciar_juego():
     tablero = [[0] * 4 for _ in range(4)]
     agregar_nuevo(tablero)
