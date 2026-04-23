@@ -8,7 +8,7 @@ def iniciar_juego():
     return tablero
 
 def agregar_nuevo(tablero):
-    celdas_vacias = [(r, c) for r in range(4) for c in range(4) if tablero[r][c] == 0]
+    celdas_vacias = [(r, c) for r in range(4) fgit config pull.rebase trueor c in range(4) if tablero[r][c] == 0]
     if celdas_vacias:
         r, c = random.choice(celdas_vacias)
         tablero[r][c] = 2 if random.random() < 0.9 else 4
